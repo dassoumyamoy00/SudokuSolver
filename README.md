@@ -59,6 +59,11 @@ Backtracking and Sudoku Generator Algorithm
 2. [My (soumya00) solution to the leetcode problem 37](https://leetcode.com/submissions/detail/541913230/)
 3. [Testing unique solutions of sudoku](http://www.birot.hu/sudoku.php)
 
-
+<br>
 
 *Other Contributor: Kaushik Mahajan*
+
+<br>
+
+`SOUMYAMOY DAS`<br>
+`4th September 2021`
