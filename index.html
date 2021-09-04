@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Sudoku Solver</title>
+		<link rel="stylesheet" href="w1.css">
+		<script src="w1.js"></script>
+	</head>
+	<body>
+		<h1>Sudoku Solver</h1>
+
+		<p style="font-size: 20px; font-weight: bold; font-family: centaur;">
+			<input type="radio" id="easy" name="level" required>
+			<label for="easy">Easy</label>
+			<input type="radio" id="medium" name="level">
+			<label for="medium">Medium</label>
+			<input type="radio" id="hard" name="level">
+			<label for="hard">Hard</label>
+			<input type="radio" id="expert" name="level">
+			<label for="expert">Expert</label>
+		</p>
+		<input type="button" value="Generate New Game" id="newGame"  onclick="newGame()">
+
+			<div id="game">
+				<div id="board"></div>
+			</div>
+			<p>
+			<input type="button" value="Check Answer" onclick="checkInput()" id="checkInput">
+			<input type="button" value="Show Answer" onclick="showAnswer()" id="showAnswer">
+			</p>
+
+		<p style="font-size: 20px;">Developed with <span>&#10084;&#65039;</span> by Soumyamoy and Kaushik</p>
+	</body>
+</html>
