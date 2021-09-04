@@ -1,48 +1,64 @@
 # SudokuSolver
 
-*A web application that generates unique sudoku every time using efficient backtracking algorithm.*
+## Introduction
 
-Introduction:
+Sudoku is a wonderful mathematical puzzle that has fascinated several mathematicians over the decades. No specific predefined mathematics behind solving a sudoku has yet been successfully established. It is completely logic-based puzzle and the only way of solving a sudoku is to try for every possible solutions.
 
-Depicts data structure and Problem Solving skills
+*Hence a simple web application has been developed that generates unique sudokus of varying difficulties every time.*
 
-## Algorithms used:
+As an enthusiast in Data Structures and Problem Solving, this has been developed so as to highlight the practical implementation of backtracking algorithm and recursion. Since backtracking runs in exponential complexity both in terms of time and space, generating all possible solutions; hence it is not suitable in most problem solving. However, small puzzles like sudoku, word puzzles, maze puzzles, etc. can only be solved using backtracking.
 
-### 
-1. Generate Random and Valid Sudoku Board :
-#### 
-* Generate the 3 principal grids in the board ramdonly, subject to constraint that every number (1-9) in every principal grid should be unique. 
-* Once the valid princpal grids are obtained, apply backtracing algorithm to generate the sudoku board.
+*The application also allows an user to solve the puzzle and check the solution.*
 
-### 
-2. Delete values at specific positions from board to create an empty sudoku
-####
-* Generate random indexes, and try deleting the value at that index; such that, once the value at that index is deleted, only a unique solution (the actual sudoku) can be generated. For this, after deleting the value at this specific index, apply backtracking to count the number of solutions possible. Restore the value at that index it number of solutions is not equal to 1, else let that value removed. Move to the next iteration.
-* The number of vaalues to be deleted (no.of knowns/unknowns) depends on the difficulty level
+***NO SAMPLE SUDOKU HAS BEEN TAKEN AS INPUT IN ANY FORM. EVERY TIME SUDOKUS ARE BEING RANDOMLY GENERATED, BASED ON THE DIFFICULTY LEVEL.***
 
-###
-3. Display this unsolved sudoku in the web application and ask the user to solve it
+## Explanation
 
-###
-4. Once the user solves the sudoku and clicks on check Answer button, tally the solution with the actual sudoku generated.
-####
+### 1. Generate Random and Valid Sudoku 
+ 
+* Generate the **three principal subgrids** in the board randomly, subject to constraint that every number (1-9) in every principal subgrid should be unique.
+* Once the valid princpal grids are obtained, apply backtracking algorithm to generate the sudoku board.
+
+### 2. Delete values from board to create an unique unsolved sudoku
+
+* Generate random indexes, and try deleting the value at that index; such that, once the value at that index is deleted, only an unique solution (the original sudoku) can be generated. For this, after deleting the value at this specific index, apply backtracking to count the number of solutions possible. Restore the value at that index it number of solutions is not equal to 1. Repeat the step based on the number of knowns/unknowns.
+* The number of values to be deleted (no.of knowns/unknowns) depends on the difficulty level.
+
+### 3. Display the unsolved sudoku and ask user to solve it
+
+### 4. Check Answer Button
+
+* Once the user solves the sudoku and clicks on check Answer button, tally the solution with the original sudoku (since the solution should be unique).
 * Highlight the correct values in green and incorrect ones in red.
 
-###
-5. If the user clicks on Show Answer button, actual sudoku is displayed
+### 5. Show Answer Button
 
-## Technologies Used: Entirely Front End based (HTML, CSS and JavaScript)
+* If the user clicks on Show Answer button, original sudoku is displayed.
 
-## Algorithms Used: Backtracking, Sudoku Generator Algorithm, Basics of sudokus
+## Languages
 
-## Data Structures Used : 2D arrays in JavaScript to store the valid and unsolved sudokus
+Entirely Front End based (HTML, CSS and JavaScript)
 
-NO SAMPLE SUDOKU HAS BEEN TAKEN AS INPUT IN ANY FORM. EVERY TIME SUDOKUS ARE BEING RANDOMLY GENERATED, BASED ON THE DIFFICULTY LEVEL.
+## Data Structures
 
-Other Contributors: Kaushik Mahajan
+2D Arrays used in JavaScript to store the valid and unsolved sudokus
 
-References:
+## Algorithms
+
+Backtracking and Sudoku Generator Algorithm
+
+## Limitations 
+
+* It is believed that the number of knowns for unique solution of any sudoku must be at least 17, but we have considered the least number of knowns as 26, while developing the application. If we have considered the number of knowns lesser than 26, the execution time for the generation of unique unsolved sudoku will exceed the normal time limits, in general environments. The algorithm should be updated further to meet this limitation.
+* Difficulty level is based on the number of knowns in the unsolved sudoku.
+* Only rank 3 sudokus have been considered in this development.
+
+## References
 
 1. [Mathematics of Sudoku - Wikipedia](https://en.wikipedia.org/wiki/Mathematics_of_Sudoku)
-2. 
+2. [My (soumya00) solution to the leetcode problem 37](https://leetcode.com/submissions/detail/541913230/)
 3. [Testing unique solutions of sudoku](http://www.birot.hu/sudoku.php)
+
+
+
+*Other Contributor: Kaushik Mahajan*
