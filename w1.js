@@ -159,7 +159,20 @@ function generateBoard(unsolvedSudoku)
 
 		if((mytile.id+1)%9==3 || (mytile.id+1)%9==6)
 			mytile.classList.add("rightBorder");
-
+		
+		if(g==0)
+		{
+			mytile.style.opacity = '0%';
+			document.getElementById("checkInput").style.opacity='0%';
+			document.getElementById("showAnswer").style.opacity='0%';
+		}
+		else
+		{
+			mytile.style.opacity = '100%';
+			document.getElementById("checkInput").style.opacity='100%';
+			document.getElementById("showAnswer").style.opacity='100%';
+		}
+		
 		document.getElementById("board").appendChild(mytile);
 	}
 }
