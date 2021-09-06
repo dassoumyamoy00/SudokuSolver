@@ -58,7 +58,7 @@ Backtracking and Sudoku Generator Algorithm
 1. [Mathematics of Sudoku - Wikipedia](https://en.wikipedia.org/wiki/Mathematics_of_Sudoku)
 2. [My (soumya00) solution to the leetcode problem 37](https://leetcode.com/submissions/detail/541913230/)
 3. [Testing unique solutions of sudoku](http://www.birot.hu/sudoku.php)
-4. [Images used in interface](https://unsplash.com/)
+4. [Image used in interface](https://unsplash.com/)
 
 <br>
 
