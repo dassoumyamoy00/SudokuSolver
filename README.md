@@ -62,8 +62,6 @@ Backtracking and Sudoku Generator Algorithm
 
 <br>
 
-*Other Contributor: Kaushik Mahajan*
-
 <br>
 
 `SOUMYAMOY DAS`<br>
